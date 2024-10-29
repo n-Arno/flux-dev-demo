@@ -10,7 +10,8 @@ Prerequisites
 -------------
 
 - Scaleway L4 GPU instance with GPU OS
-- python3.10-venv package
+- `apt-get install python3.10-venv -y`
+- Hugging Face token (read) and access to this gated repository: https://huggingface.co/black-forest-labs/FLUX.1-dev
 
 To install
 ----------
@@ -21,8 +22,17 @@ cd flux-dev-demo
 ./install.sh
 ```
 
+Login to Hugging Face before continuing
+```
+source venv/bin/activate
+huggingface-cli login
+deactivate
+```
+
 To run
 ------
+
+First start will take some time since it will download models from Hugging Face.
 
 ```
 cd flux-dev-demo
