@@ -1,0 +1,12 @@
+gradio
+wandb
+tqdm
+transformers
+diffusers
+safetensors
+torchvision==0.18.1
+sentencepiece
+einops
+accelerate
+hf_transfer
+bitsandbytes>=0.43.3
